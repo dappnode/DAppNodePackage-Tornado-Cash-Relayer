@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  tornado-cash-relayer.public.dappnode.eth:
+    build: ./build
+    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.1'
+    restart: always
+    volumes:
+      - 'tor:/hidden_service'
+      - 'data:/data'
+    environment:
+      - PRIVATE_KEY=
+      - RELAYER_FEE=2.5
+      - NETWORK=kovan
+volumes:
+  tor: {}
+  data: {}

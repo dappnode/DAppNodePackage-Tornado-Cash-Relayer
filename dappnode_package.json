@@ -1,0 +1,31 @@
+{
+  "name": "tornado-cash-relayer.public.dappnode.eth",
+  "version": "0.0.1",
+  "upstreamVersion": "v2.22",
+  "shortDescription": "TornadoCash Relayer over Tor",
+  "description": "TornadoCash - Non-custodial anonymous transactions on Ethereum",
+  "type": "service",
+  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "contributors": [
+    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+  ],
+  "categories": [
+    "Economic incentive"
+  ],
+  "links": {
+    "homepage": "http://tornado-cash-relay.public.dappnode",
+    "tornadocash": "https://tornado.cash/",
+    "onion address": "http://tornado-cash-relayer.public.dappnode/onion",
+    "onion address (https)": "https://tornado-cash-relayer.public.dappnode/onion"
+  },
+  "backup": [
+    {
+      "name": "tor",
+      "path": "/hidden_service"
+    }
+  ],
+  "license": "GLP-3.0",
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.22"
+  }
+}
