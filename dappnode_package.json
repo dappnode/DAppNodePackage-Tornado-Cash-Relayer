@@ -1,6 +1,6 @@
 {
   "name": "tornado-cash-relayer.public.dappnode.eth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "upstreamVersion": "v2.22",
   "shortDescription": "TornadoCash Relayer over Tor",
   "description": "TornadoCash - Non-custodial anonymous transactions on Ethereum",
