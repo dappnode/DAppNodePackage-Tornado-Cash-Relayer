@@ -2,7 +2,7 @@ version: '3.4'
 services:
   tornado-cash-relayer.public.dappnode.eth:
     build: ./build
-    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.2'
+    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.3'
     restart: always
     volumes:
       - 'tor:/hidden_service'
