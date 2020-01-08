@@ -51,7 +51,7 @@ RUN PASSWORD=$(echo $(LC_CTYPE=C tr -dc 'A-HJ-NPR-Za-km-z2-9' < /dev/urandom | h
     openssl genrsa -des3 -passout pass:${PASSWORD} -out server.pass.key 2048 && \
     openssl rsa -passin pass:${PASSWORD} -in server.pass.key -out server.key && \
     rm server.pass.key && \
-    openssl req -new -key server.key -x509 -days 365 -out server.crt -addext extendedKeyUsage=serverAuth -addext subjectAltName=DNS:cosmos.public.dappnode -subj "/C=DE/ST=Decentraland/L=Decentraland/O=cosmos.public.dappnode/OU=colmena@colmena.com/CN=cosmos.public.dappnode"
+    openssl req -new -key server.key -x509 -days 365 -out server.crt -addext extendedKeyUsage=serverAuth -addext subjectAltName=DNS:tornado-cash-relayer.public.dappnode -subj "/C=DE/ST=DAppNode/L=DAppNode/O=tornado-cash-relayer.public.dappnode/OU=community@dappnode.io/CN=tornado-cash-relayer.public.dappnode"
 RUN mkdir -p /etc/nginx/certs/ && cp //usr/src/app/server.* /etc/nginx/certs/
 
 #ENV TOR_USER=tord

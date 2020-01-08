@@ -21,6 +21,12 @@ echo "#################################################"
 
 sed -i 's/example.com/'"$address"'/g' /etc/nginx/nginx.conf 
 
+PASSWORD=$(echo $(LC_CTYPE=C tr -dc 'A-HJ-NPR-Za-km-z2-9' < /dev/urandom | head -c 20)) && \
+    openssl genrsa -des3 -passout pass:${PASSWORD} -out /etc/nginx/certs/server.pass.key 2048 && \
+    openssl rsa -passin pass:${PASSWORD} -in /etc/nginx/certs/server.pass.key -out /etc/nginx/certs/server.key && \
+    rm /etc/nginx/certs/server.pass.key && \
+    openssl req -new -key /etc/nginx/certs/server.key -x509 -days 365 -out /etc/nginx/certs/server.crt -addext extendedKeyUsage=serverAuth -addext subjectAltName=DNS:$address -subj "/C=DE/ST=DAppNode/L=DAppNode/O=$address/OU=community@dappnode.io/CN=$address"
+
 kill -HUP $(pgrep nginx | head -1)
 
 exec /usr/bin/tor
