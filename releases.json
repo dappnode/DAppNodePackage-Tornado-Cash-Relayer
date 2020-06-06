@@ -15,10 +15,11 @@
     "link": "http://my.dappnode/#/sdk/publish/r=tornado-cash-relayer.public.dappnode.eth&v=0.0.2&h=%2Fipfs%2FQmbyUHbKMRCtFeaWNQPqbxqJk865idBnMWw3b5xiJSESwu"
   },
   "0.0.3": {
-    "hash": "/ipfs/QmawaXeTdAFXfWLopJNV5nNECtQjoPPpA16RghCU1zAWwh",
+    "hash": "/ipfs/QmbQDV7jJXPd4beuA6bj1cJjwrn5pUrtbVQiWFQeSQzdUJ",
     "type": "directory",
     "uploadedTo": {
-      "dappnode": "Sat, 06 Jun 2020 17:11:32 GMT"
-    }
+      "remote": "Sat, 06 Jun 2020 17:29:46 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=tornado-cash-relayer.public.dappnode.eth&v=0.0.3&h=%2Fipfs%2FQmbQDV7jJXPd4beuA6bj1cJjwrn5pUrtbVQiWFQeSQzdUJ"
   }
 }
