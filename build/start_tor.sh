@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/sh
 
 HIDDEN_SERVICE_DIR=/hidden_service
 
@@ -19,9 +19,9 @@ echo "https://${address}"
 echo
 echo "#################################################"
 
-sed -i 's/example.com/'"$address"'/g' /etc/nginx/nginx.conf 
+sed -i 's/example.com/'"$address"'/g' /etc/nginx/nginx.conf
 
-PASSWORD=$(echo $(LC_CTYPE=C tr -dc 'A-HJ-NPR-Za-km-z2-9' < /dev/urandom | head -c 20)) && \
+PASSWORD=$(openssl rand -base64 14) && \
     openssl genrsa -des3 -passout pass:${PASSWORD} -out /etc/nginx/certs/server.pass.key 2048 && \
     openssl rsa -passin pass:${PASSWORD} -in /etc/nginx/certs/server.pass.key -out /etc/nginx/certs/server.key && \
     rm /etc/nginx/certs/server.pass.key && \
