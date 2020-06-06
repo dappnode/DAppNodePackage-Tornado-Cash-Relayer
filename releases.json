@@ -5,5 +5,20 @@
     "uploadedTo": {
       "dappnode": "Tue, 07 Jan 2020 17:12:47 GMT"
     }
+  },
+  "0.0.2": {
+    "hash": "/ipfs/QmbyUHbKMRCtFeaWNQPqbxqJk865idBnMWw3b5xiJSESwu",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Wed, 08 Jan 2020 10:50:24 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=tornado-cash-relayer.public.dappnode.eth&v=0.0.2&h=%2Fipfs%2FQmbyUHbKMRCtFeaWNQPqbxqJk865idBnMWw3b5xiJSESwu"
+  },
+  "0.0.3": {
+    "hash": "/ipfs/QmawaXeTdAFXfWLopJNV5nNECtQjoPPpA16RghCU1zAWwh",
+    "type": "directory",
+    "uploadedTo": {
+      "dappnode": "Sat, 06 Jun 2020 17:11:32 GMT"
+    }
   }
 }

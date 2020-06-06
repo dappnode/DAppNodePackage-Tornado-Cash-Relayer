@@ -19,6 +19,30 @@
       "type": "string",
       "title": "Private Key",
       "description": "Specify the private key of your relayer without 0x prefix. You need to have enough eth to be able to pay gas and broadcast transactions"
+    },
+    "nonce_watcher_interval": {
+      "type": "string",
+      "title": "Nonce watcher interval",
+      "description": "How often the watcher will check the first pending tx (in seconds)",
+      "default": "30"
+    },
+    "allowable_pending_tx_timeout": {
+      "type": "string",
+      "title": "Allowable pending tx timeout",
+      "description": "how long a tx can be in pending pool (in seconds)",
+      "default": "180"
+    },
+    "max_gas_price": {
+      "type": "string",
+      "title": "Max. Gas Price",
+      "description": "Max. Gas Price in GWEI",
+      "default": "200"
+    },
+    "gas_price_bump_percentage": {
+      "type": "string",
+      "title": "Gas Price Bump Percentage",
+      "description": "How much to increase the gas price for a stuck tx",
+      "default": "20"
     }
   },
   "required": [

@@ -7,15 +7,16 @@ The relayer uses a self-signed certificate, so anyone (you or anyone using your 
     #################################################
     Hidden service address:
 
-    http://tcsh2rplyaoqwdx6.onion
+    http://tcsh5ydwdvd77ui4.onion
     or
-    https://tcsh2rplyaoqwdx6.onion
+    https://tcsh5ydwdvd77ui4.onion
+
 
     #################################################
     ```
 2. Whoever wants to user the relayer will have to go to the above **https .onion** address connected over Tor. You can do that with the [Tor browser](https://www.torproject.org/download/) or with [Brave browser](https://brave.com/) > File > New Private Window with Tor)
 
-3. You'll get an error, so you need to click `Advanced` and then `Proceed to tcsh2rplyaoqwdx6.onion (unsafe)` (where tcsh2rplyaoqwdx6.onion is your onion address):
+3. You'll get an error, so you need to click `Advanced` and then `Proceed to tcsh5ydwdvd77ui4.onion (unsafe)` (where tcsh5ydwdvd77ui4.onion is your onion address):
 
     ![](https://i.imgur.com/W5ts0h3.png)
 
@@ -33,7 +34,7 @@ The relayer uses a self-signed certificate, so anyone (you or anyone using your 
     ⚠️Remember that the address of the relayer needs to hold funds to effectively *'relay'*, that is pay the gas to maintain the privacy of the withdrawer ⚠️
     
 
-5. Now that the certificate is accepted, go to Tornado.cash's website, preferably over Tor. You will need a secret note from your Deposit. To know how to make a deposit in Tornado.cash, please follow their [tutorial](https://tornado.cash/tutorial).
+5. Now that the certificate is accepted, go to Tornado.cash's [website](https://tornado.cash), preferably over Tor. You will need a secret note from your Deposit. To know how to make a deposit in Tornado.cash, please follow their [tutorial](https://tornado.cash/tutorial).
 
 6. Go to the withdraw tab and paste your note.
 
@@ -41,7 +42,7 @@ The relayer uses a self-signed certificate, so anyone (you or anyone using your 
 
     ![](https://i.imgur.com/I7rnP1m.png)
 
-8. Select custom and paste your relayer url (like the example above, it will look similar to: `https://tcsh2rplyaoqwdx6.onion`) and `Save`
+8. Select custom and paste your relayer url (like the example above, it will look similar to: `https://tcsh5ydwdvd77ui4.onion`) and `Save`
 
     ![](https://i.imgur.com/vbNejaw.png)
 

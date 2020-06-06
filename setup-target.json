@@ -10,5 +10,21 @@
   "private_key": {
     "type": "environment",
     "name": "PRIVATE_KEY"
+  },
+  "nonce_watcher_interval": {
+    "type": "environment",
+    "name": "NONCE_WATCHER_INTERVAL"
+  },
+  "allowable_pending_tx_timeout": {
+    "type": "environment",
+    "name": "ALLOWABLE_PENDING_TX_TIMEOUT"
+  },
+  "max_gas_price": {
+    "type": "environment",
+    "name": "MAX_GAS_PRICE"
+  },  
+  "gas_price_bump_percentage": {
+    "type": "environment",
+    "name": "GAS_PRICE_BUMP_PERCENTAGE"
   }
 }
