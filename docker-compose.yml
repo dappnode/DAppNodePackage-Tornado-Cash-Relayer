@@ -5,7 +5,7 @@ services:
       context: ./build
       args:
         - VERSION
-    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.4'
+    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.5'
     restart: always
     volumes:
       - 'tor:/hidden_service'
