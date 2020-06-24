@@ -29,5 +29,13 @@
       "remote": "Fri, 19 Jun 2020 09:13:37 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=tornado-cash-relayer.public.dappnode.eth&v=0.0.4&h=%2Fipfs%2FQmXPCPVn79F97Fv82WxjD6dvYZGeojt4FTeqZShbMeGGoA"
+  },
+  "0.0.5": {
+    "hash": "/ipfs/QmVVqy71NoVSXE6KMxcqWAworBW7j8TA4KCVCKULpighqP",
+    "type": "directory",
+    "uploadedTo": {
+      "remote": "Wed, 24 Jun 2020 09:13:27 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=tornado-cash-relayer.public.dappnode.eth&v=0.0.5&h=%2Fipfs%2FQmVVqy71NoVSXE6KMxcqWAworBW7j8TA4KCVCKULpighqP"
   }
 }
