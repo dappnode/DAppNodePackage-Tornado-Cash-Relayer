@@ -1,11 +1,11 @@
 ######################################################
 FROM alpine:3.11 as relayer-builder
-ARG VERSION
+ARG UPSTREAM_VERSION
 WORKDIR /usr/src/app
 
 RUN apk add -U git nodejs npm python build-base make g++
 
-RUN git clone -b ${VERSION} https://github.com/tornadocash/relayer.git && \
+RUN git clone -b ${UPSTREAM_VERSION} https://github.com/tornadocash/relayer.git && \
     cd relayer && \ 
     npm i && \
     npm cache clean --force

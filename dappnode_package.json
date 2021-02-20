@@ -9,9 +9,9 @@
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
   ],
-  "categories": [
-    "Economic incentive"
-  ],
+  "upstreamRepo": "tornadocash/relayer",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "categories": ["Economic incentive"],
   "links": {
     "homepage": "http://tornado-cash-relay.public.dappnode",
     "tornadocash": "https://tornado.cash/",

@@ -1,23 +1,23 @@
-version: '3.4'
+version: "3.4"
 services:
   tornado-cash-relayer.public.dappnode.eth:
     build:
       context: ./build
       args:
-        - VERSION
-    image: 'tornado-cash-relayer.public.dappnode.eth:0.0.5'
-    restart: always
+        - UPSTREAM_VERSION
+    image: "tornado-cash-relayer.public.dappnode.eth:0.0.5"
+    restart: unless-stopped
     volumes:
-      - 'tor:/hidden_service'
-      - 'data:/data'
+      - "tor:/hidden_service"
+      - "data:/data"
     environment:
-      - PRIVATE_KEY=
-      - RELAYER_FEE=2.5
-      - NETWORK=kovan
-      - NONCE_WATCHER_INTERVAL=30
-      - ALLOWABLE_PENDING_TX_TIMEOUT=180
-      - MAX_GAS_PRICE=200
-      - GAS_PRICE_BUMP_PERCENTAGE=20
+      PRIVATE_KEY: ""
+      RELAYER_FEE: 2.5
+      NETWORK: kovan
+      NONCE_WATCHER_INTERVAL: 30
+      ALLOWABLE_PENDING_TX_TIMEOUT: 180
+      MAX_GAS_PRICE: 200
+      GAS_PRICE_BUMP_PERCENTAGE: 20
 volumes:
   tor: {}
   data: {}
