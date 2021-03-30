@@ -4,7 +4,7 @@ services:
     build:
       context: ./build
       args:
-        UPSTREAM_VERSION: v2.7
+        UPSTREAM_VERSION: v4.0.10
     image: "tornado-cash-relayer.public.dappnode.eth:0.0.5"
     restart: unless-stopped
     volumes:
