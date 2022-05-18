@@ -2,7 +2,7 @@ version: "3.4"
 services:
   tornado-cash-relayer.public.dappnode.eth:
     build:
-      context: ./build
+      context: ./src
       args:
         UPSTREAM_VERSION: v2.7
     image: "tornado-cash-relayer.public.dappnode.eth:0.0.5"
