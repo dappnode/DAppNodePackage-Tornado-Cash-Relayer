@@ -1,7 +1,13 @@
 {
   "name": "tornado-cash-relayer.public.dappnode.eth",
   "version": "0.0.5",
-  "upstreamVersion": "2.7",
+  "upstream": [
+    {
+      "repo": "tornadocash/relayer",
+      "version": "2.7",
+      "arg": "UPSTREAM_VERSION"
+    }
+  ],
   "shortDescription": "TornadoCash Relayer over Tor",
   "description": "TornadoCash - Non-custodial anonymous transactions on Ethereum",
   "type": "service",
@@ -9,8 +15,6 @@
   "contributors": [
     "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
   ],
-  "upstreamRepo": "tornadocash/relayer",
-  "upstreamArg": "UPSTREAM_VERSION",
   "categories": ["Economic incentive"],
   "links": {
     "homepage": "http://tornado-cash-relay.public.dappnode",
